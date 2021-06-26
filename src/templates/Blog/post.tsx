@@ -29,7 +29,14 @@ interface TemplateProps {
 const BlogTemplate = ({ data: { blog } }: TemplateProps) => {
   return (
     <Layout>
-      <Helmet title={blog.title} />
+      <Helmet title={blog.title}>
+        <meta
+          charSet="utf-8"
+          name="description"
+          content="Blog post by an illustrator."
+        />
+      </Helmet>
+
       <BlogBody content={blog.body} />
     </Layout>
   );

@@ -49,7 +49,13 @@ export const query = graphql`
 const IndexPage = ({ data: { blogs } }: HomeProps) => {
   return (
     <Layout>
-      <Helmet title="Home" />
+      <Helmet title="Home">
+        <meta
+          charSet="utf-8"
+          name="description"
+          content="Blog posts by an illustrator."
+        />
+      </Helmet>
       <Box
         sx={{
           display: "grid",
