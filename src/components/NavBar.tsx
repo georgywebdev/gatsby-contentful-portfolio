@@ -1,12 +1,19 @@
 import React from "react";
-import { Box, Flex, Link, Text } from "rebass";
+import { Box, Flex, Link } from "rebass";
 
 const NavBar = () => {
   return (
-    <Flex p={2} color="white" bg="black" alignItems="center">
-      <Text p={2} fontSize={[3, 4, 5]} fontWeight="bold">
+    <Flex p={2} bg="black" alignItems="center">
+      <Link
+        href="/"
+        p={2}
+        fontSize={[3, 4, 5]}
+        fontWeight="bold"
+        sx={{ textDecoration: "none" }}
+        color="white"
+      >
         Nikitos
-      </Text>
+      </Link>
       <Box mx="auto" />
       <Link
         href="#!"
