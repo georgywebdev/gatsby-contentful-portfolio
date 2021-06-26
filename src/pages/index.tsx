@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { FluidObject } from "gatsby-image";
-
+import { Helmet } from "react-helmet";
 import { BlogCard } from "../components/BlogCard";
 
 import { Box } from "rebass";
@@ -49,6 +49,7 @@ export const query = graphql`
 const IndexPage = ({ data: { blogs } }: HomeProps) => {
   return (
     <Layout>
+      <Helmet title="Home" />
       <Box
         sx={{
           display: "grid",

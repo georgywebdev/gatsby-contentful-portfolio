@@ -9,6 +9,7 @@ import {
 import { BlogBody } from "../../components/BlogBody";
 import { Layout } from "../../components/Layout";
 import "../../styles/style.scss";
+import { Helmet } from "react-helmet";
 
 interface TemplateProps {
   data: {
@@ -28,6 +29,7 @@ interface TemplateProps {
 const BlogTemplate = ({ data: { blog } }: TemplateProps) => {
   return (
     <Layout>
+      <Helmet title={blog.title} />
       <BlogBody content={blog.body} />
     </Layout>
   );
