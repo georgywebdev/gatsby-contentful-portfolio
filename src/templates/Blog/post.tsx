@@ -8,6 +8,7 @@ import {
 
 import { BlogBody } from "../../components/BlogBody";
 import { Layout } from "../../components/Layout";
+import "../styles/style.scss";
 
 interface TemplateProps {
   data: {
