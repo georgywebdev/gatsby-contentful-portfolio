@@ -7,7 +7,7 @@ type NavProps = {
 
 const NavBar = ({ path }: NavProps) => {
   return (
-    <Flex bg="black" alignItems="center">
+    <Flex bg="black" alignItems="center" py={2} px={1}>
       <Link
         href="/"
         p={2}
