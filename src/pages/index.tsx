@@ -5,9 +5,9 @@ import { Helmet } from "react-helmet";
 import { BlogCard } from "../components/BlogCard";
 
 import { Box } from "rebass";
-import "../styles/style.scss";
 import { Layout } from "../components/Layout";
 import { PageProps } from "gatsby";
+import "../styles/style.scss";
 
 interface HomeProps extends PageProps {
   data: {

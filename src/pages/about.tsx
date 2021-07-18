@@ -4,6 +4,7 @@ import { Box } from "rebass";
 
 import { Layout } from "../components/Layout";
 import { PageProps } from "gatsby";
+import "../styles/style.scss";
 
 const About = ({ location }: PageProps) => {
   return (
