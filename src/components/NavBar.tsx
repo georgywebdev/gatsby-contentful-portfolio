@@ -31,10 +31,10 @@ const NavBar = ({ path }: NavProps) => {
         Projects
       </Link>
       <Link
-        href="/about"
+        href="/about/"
         fontSize={[1, 2, 3]}
         color="white"
-        sx={{ textDecoration: path === "/about" ? "underline" : "none" }}
+        sx={{ textDecoration: path === "/about/" ? "underline" : "none" }}
         mr={3}
       >
         About
