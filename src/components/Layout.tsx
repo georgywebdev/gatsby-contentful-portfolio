@@ -21,7 +21,7 @@ export const Layout = ({ children, path }: LayoutProps) => {
       <Box
         sx={{
           flex: "1 1 auto",
-          maxWidth: "1024px",
+          maxWidth: "1200px",
           width: "100%",
           mx: "auto",
           p: 4,
