@@ -28,7 +28,7 @@ interface HomeProps {
 
 export const query = graphql`
   query {
-    blogs: allContentfulBlogPost {
+    blogs: allContentfulBlogPost(sort: { fields: publishedAt, order: DESC }) {
       edges {
         node {
           id

@@ -17,7 +17,7 @@ interface TemplateProps {
       id: string;
       title: string;
       slug: string;
-      publishedDate: string;
+      publishedAt: string;
       body: RenderRichTextData<ContentfulRichTextGatsbyReference>;
       preview: {
         fluid: FluidObject;
@@ -49,7 +49,7 @@ export const query = graphql`
     blog: contentfulBlogPost(slug: { eq: $slug }) {
       id
       title
-      publishedDate(formatString: "MMM D YYYY")
+      publishedAt(formatString: "MMM D YYYY")
       preview {
         fluid(quality: 100) {
           ...GatsbyContentfulFluid

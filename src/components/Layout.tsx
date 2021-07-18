@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex } from "rebass";
-import Footer from "./Footex";
+import Footer from "./Footer";
 import NavBar from "./NavBar";
 
 type LayoutProps = {
