@@ -7,8 +7,9 @@ import { BlogCard } from "../components/BlogCard";
 import { Box } from "rebass";
 import "../styles/style.scss";
 import { Layout } from "../components/Layout";
+import { PageProps } from "gatsby";
 
-interface HomeProps {
+interface HomeProps extends PageProps {
   data: {
     blogs: {
       edges: {
@@ -46,9 +47,9 @@ export const query = graphql`
   }
 `;
 
-const IndexPage = ({ data: { blogs } }: HomeProps) => {
+const IndexPage = ({ data: { blogs }, location }: HomeProps) => {
   return (
-    <Layout>
+    <Layout path={location.pathname}>
       <Helmet title="Home">
         <meta
           charSet="utf-8"

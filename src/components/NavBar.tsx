@@ -1,9 +1,13 @@
 import React from "react";
 import { Box, Flex, Link } from "rebass";
 
-const NavBar = () => {
+type NavProps = {
+  path?: string;
+};
+
+const NavBar = ({ path }: NavProps) => {
   return (
-    <Flex p={2} bg="black" alignItems="center">
+    <Flex bg="black" alignItems="center">
       <Link
         href="/"
         p={2}
@@ -16,12 +20,24 @@ const NavBar = () => {
       </Link>
       <Box mx="auto" />
       <Link
-        href="#!"
+        href="/"
         fontSize={[1, 2, 3]}
         color="white"
-        sx={{ textDecoration: "none" }}
+        sx={{
+          textDecoration: path === "/" ? "underline" : "none",
+        }}
+        mr={3}
       >
-        Some link
+        Projects
+      </Link>
+      <Link
+        href="/about"
+        fontSize={[1, 2, 3]}
+        color="white"
+        sx={{ textDecoration: path === "/about" ? "underline" : "none" }}
+        mr={3}
+      >
+        About
       </Link>
     </Flex>
   );

@@ -5,9 +5,10 @@ import NavBar from "./NavBar";
 
 type LayoutProps = {
   children: React.ReactNode;
+  path?: string;
 };
 
-export const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ children, path }: LayoutProps) => {
   return (
     <Flex
       sx={{
@@ -16,7 +17,7 @@ export const Layout = ({ children }: LayoutProps) => {
         minHeight: "100vh",
       }}
     >
-      <NavBar />
+      <NavBar path={path} />
       <Box
         sx={{
           flex: "1 1 auto",
