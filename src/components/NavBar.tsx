@@ -14,7 +14,7 @@ const NavBar = ({ path }: NavProps) => {
         fontSize={[3, 4, 5]}
         fontWeight="bold"
         sx={{ textDecoration: "none" }}
-        color="white"
+        color="#eeeeee"
       >
         Nikitos
       </Link>
@@ -22,7 +22,7 @@ const NavBar = ({ path }: NavProps) => {
       <Link
         href="/"
         fontSize={[1, 2, 3]}
-        color="white"
+        color="#eeeeee"
         sx={{
           textDecoration: path === "/" ? "underline" : "none",
         }}
@@ -33,7 +33,7 @@ const NavBar = ({ path }: NavProps) => {
       <Link
         href="/about/"
         fontSize={[1, 2, 3]}
-        color="white"
+        color="#eeeeee"
         sx={{ textDecoration: path === "/about/" ? "underline" : "none" }}
         mr={3}
       >
