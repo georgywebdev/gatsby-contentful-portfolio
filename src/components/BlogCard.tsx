@@ -19,7 +19,7 @@ export const BlogCard = ({ blog: { preview, title, slug } }: BlogCardProps) => {
     <Link href={`/blogs/${slug}`} sx={{ textDecoration: "none" }}>
       <Img fluid={preview.fluid} loading="lazy" />
 
-      <Box bg="black" color="white" py={3} px={2}>
+      <Box bg="black" color="#eeeeee" py={3} px={2}>
         <Text p={2} fontSize={[2, 3, 4]} fontWeight="bold">
           {title}
         </Text>
